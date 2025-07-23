@@ -9,10 +9,10 @@ from rich import box
 console = Console()
 
 # Masukan data
-token = input("BOT TOKEN: ")
-chat_id = input("CHAT ID: ")
-pesan = input("Pesan: ")
-jumlah = int(input("Jumlah: "))
+token = input("Masukan BOT TOKEN: ")
+chat_id = input("Masukan CHAT ID: ")
+pesan = input("Masukan Pesan: ")
+jumlah = int(input("Masukan Jumlah: "))
 
 url = f"https://api.telegram.org/bot{token}/sendMessage"
 sem = asyncio.Semaphore(5)  # Batas maksimal concurrent task
